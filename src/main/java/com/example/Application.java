@@ -9,7 +9,7 @@ public class Application {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
-	
+	//HIS-134 modification
 			context.close();
 	}
 
