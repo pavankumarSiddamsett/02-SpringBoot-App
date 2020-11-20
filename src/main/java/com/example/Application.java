@@ -8,9 +8,18 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class Application {
 
 	public static void main(String[] args) {
+
+Map<String,Object> cache =new HashMap();
+
 		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
 	//HIS-134 modification
 			context.close();
+
+
+	}
+//HIS-301 changes
+	public void getData(){
+//logic goes here
 	}
 
 }
